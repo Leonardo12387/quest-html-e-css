@@ -1,0 +1,160 @@
+
+
+html{
+    background-image: url(images/bg-desktop.svg);
+    background-color:   hsl(257, 40%, 49%); 
+    
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+} 
+
+.logo{
+height: 50px;
+margin-left: 90px;
+margin-top: 50px;
+}
+
+.painel{
+    margin-top: 85px;
+}
+
+.descricao{
+color: #ffffff;
+margin-bottom: 40px;
+}
+
+
+.descricao .titulo{
+margin-bottom: 20px;
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+font-size: 40px;
+}
+
+.descricao .paragrafo{
+    font-family: 'Open Sans',  sans-serif;
+    margin-bottom: 40px;
+    max-width: 570px;
+}
+
+.descricao .btn{
+    text-decoration:none;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    padding: 15px 60px;
+    border-radius: 30px;
+    margin-top: 50px;
+    color: hsl(257, 40%, 49%); 
+    box-shadow: 0px 1px 7px black;
+}
+
+.descricao .btn:hover{
+    background-color: hsl(300, 69%, 71%); 
+    color: #ffffff;
+    
+}
+
+.redes{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    margin-right: 80px;
+    list-style: none; 
+}
+
+
+.redes .fa-brands{
+    border-radius: 50%;
+    font-size: 1.0rem;
+    height: 35px;
+    width: 35px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:5px;
+    margin-right: 10px;
+}
+
+
+
+.redes a{
+    color: #ffffff;
+    text-decoration:none;
+    
+}
+
+
+
+
+.redes a:hover{
+    color: hsl(300, 69%, 71%); 
+}
+
+@media(max-width:375px){
+    body{
+        background-image: url(images/bg-mobile.svg);
+    background-color:   hsl(257, 40%, 49%); 
+    background-repeat: no-repeat;
+    
+    }
+
+
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    .logo{
+        margin-left: 20px;
+        height: 30px;
+margin-left: 45px;
+margin-top: 25px;
+    }
+
+.painel{
+    width: 300px;
+    height: 200px;
+}
+
+    .descricao{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top:20px;
+    }
+
+
+    .descricao .titulo{
+        font-size: 24px;
+    
+    }
+
+    .descricao .paragrafo{
+        text-align: center;
+        font-size: 18px;
+        max-width: 250px;
+    }
+
+    .descricao  .btn{
+        padding: 10px 80px;
+        margin-top: 30px;
+    }
+
+    .redes{
+        
+        align-items: center;
+        
+        margin-right: 1px;
+        
+    }
+}
